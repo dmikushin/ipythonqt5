@@ -1,10 +1,6 @@
-# Set the QT API to PyQt4
 import os
-os.environ['QT_API'] = 'pyqt'
-import sip
-sip.setapi("QString", 2)
-sip.setapi("QVariant", 2)
 from PyQt5.QtWidgets import *
+
 # Import the console machinery from ipython
 from qtconsole.rich_jupyter_widget import RichJupyterWidget
 from qtconsole.inprocess import QtInProcessKernelManager
