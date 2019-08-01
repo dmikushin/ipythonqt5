@@ -36,3 +36,11 @@ Launch the IPython Qt application example:
 python ./example.py
 ```
 
+## Standalone executable
+
+A standalone executable could be created with Nuitka:
+
+```
+pip install nuitka
+python -m nuitka --standalone --recurse-all --show-progress --show-modules --plugin-enable=qt-plugins --include-package=pygments.lexers --include-package=pygments.styles --include-package=ipykernel.datapub --include-package=zmq.utils --remove-output --output-dir=nuitka-build example.py
+```
