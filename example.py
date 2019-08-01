@@ -55,7 +55,7 @@ class ExampleWidget(QWidget):
         ipyConsole.printText("The variable 'foo' and the method 'print_process_id()' are available. Use the 'whos' command for information.")                           
 
 def print_process_id():
-    print('Process ID is: ' + os.getpid())
+    print("Process ID is: %d" % os.getpid())
 
 def main():
     app  = QApplication([])
