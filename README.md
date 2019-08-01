@@ -18,7 +18,7 @@ Install Python dependencies:
 
 ```
 pip install wheel
-pip install ipykernel qtconsole
+pip install ipykernel==4.6.1 qtconsole
 pip install sip PyQt5
 ```
 
