@@ -42,5 +42,5 @@ A standalone executable could be created with Nuitka:
 
 ```
 pip install nuitka
-python -m nuitka --standalone --recurse-all --show-progress --show-modules --plugin-enable=qt-plugins --include-package=pygments.lexers --include-package=pygments.styles --include-package=ipykernel.datapub --include-package=zmq.utils --remove-output --output-dir=nuitka-build example.py
+python -m nuitka --standalone --recurse-all --show-progress --show-modules --plugin-enable=qt-plugins --include-package=pygments.lexers --include-package=pygments.styles --include-package=ipykernel.datapub --include-package=zmq.utils --include-package=pip --include-package=wheel --output-dir=x86_64-linux-python-3.6 example.py
 ```
